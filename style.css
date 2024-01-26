@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container-main {
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 75vmin;
+  height: auto;
+  margin: auto;
+}
+
+#pseudoImage {
+  width: 60vmin;
+  height: 60vmin;
+  background: linear-gradient(0deg, grey, lightgrey);
+}
+
+#container-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 0.25em;
+  width: 60vmin;
+  height: auto;
+}
+
+.tag {
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  background: #ddd;
+  color: black;
+  border-radius: 1lh;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #eee;
+}
+
+.add,
+.del {
+  font-size: inherit;
+  background: none;
+}
+
+.add {
+  color: blue;
+  border: 2px solid blue;
+}
+
+.add:hover {
+  background: #eef;
+}
+
+.del {
+  color: red;
+  border: 2px solid red;
+}
+
+.del:hover {
+  background: #fee;
+}
